@@ -782,7 +782,7 @@ program define oregontrail_hunt
 		
 		* If typed incorrectly, user misses for sure
 		if "${ot_ans}"!="`huntword`r2''" {
-		    "You missed! Your dinner escaped."
+		    di "You missed! Your dinner escaped."
 			global ot_ammo = ${ot_ammo}-10
 		}
 		
