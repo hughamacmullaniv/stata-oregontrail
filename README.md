@@ -23,7 +23,7 @@ Quickstart
 
 Install from Github:
 ```stata
-net install oregontrail, from(https://raw.githubusercontent.com/mdroste/stata-oregontrail/master/) replace
+net install oregontrail, from(https://raw.githubusercontent.com/mdroste/stata-oregontrail/main/) replace
 ```
 
 Play:
