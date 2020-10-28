@@ -497,12 +497,12 @@ program define oregontrail_main_loop
 		
 		* Mountain XX
 		
-		** Death
-		oregontrail_check_death
+		** Death XX
+		*oregontrail_check_death
 		
 		* If not dead, display move forward info and end of turn
 		if ${ot_dead}!=1 {
-			di "DEBUG: curr dist is $ot_curr_dist"
+			*di "DEBUG: curr dist is $ot_curr_dist"
 			* Move forward
 			global ot_curr_dist = ${ot_curr_dist} + 200 + ceil((${ot_oxen}-220)/5 + runiform()*10) 
 		
