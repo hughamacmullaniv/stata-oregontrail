@@ -487,7 +487,7 @@ program define oregontrail_main_loop
 		oregontrail_get_choices_food
 		
 		* Riders XX
-		oregontrail_riders
+		*oregontrail_riders
 		
 		* Random event
 		if ${ot_dead}!=1 {
@@ -719,7 +719,7 @@ program define oregontrail_riders
 	version 12.1
 	
 	* Riders attack
-	if runiform()*10 <= ((${ot_total_mileage}/100-4)**2+72) / ((${ot_total_mileage}/100-4)**2+12)-1 {
+	if runiform()*10 <= ((${ot_total_mileage}/100-4)^2+72) / ((${ot_total_mileage}/100-4)^2+12)-1 {
 		local hostility = runiform() < 0.8
 		if `hostility'==1 {
 			di "Riders ahead - they look hostile."
@@ -778,7 +778,7 @@ program define oregontrail_hunt
 		local response_time = r(t11)
 		local response_time2 = `response_time' - (${ot_shooting_level}-1)
 		local response_time3 = max(`response_time2',0)
-		di "response time: `response_time', `response_time2', `response_time3'"
+		*di "response time: `response_time', `response_time2', `response_time3'"
 		
 		* If typed incorrectly, user misses for sure
 		if "${ot_ans}"!="`huntword`r2''" {
