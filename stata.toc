@@ -1,0 +1,4 @@
+
+v 0.1
+d Michael Droste, mdroste@fas.harvard.edu
+p 'oregontrail': Oregon Trail in Stata
