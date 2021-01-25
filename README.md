@@ -9,7 +9,7 @@ oregontrail
 
 Oregon Trail (1978) in Stata
 
-`version 0.1 28oct2020`
+`version 0.13 24jan2021`
 
 
 Overview

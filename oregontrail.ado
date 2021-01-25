@@ -222,7 +222,7 @@ program define oregontrail_marksman_level
 	while `valid_response'==0 {
 	
 	di as text " "
-	di "How good a shoto are you with your hunting rifle?"
+	di "How good a shot are you with your hunting rifle?"
 	di "  1. Ace marksman"
 	di "  2. Good shot"
 	di "  3. Fair to middlin'"
@@ -662,9 +662,9 @@ program define oregontrail_get_choices_food
 	version 12.1
 	
 	if ${ot_food} < 13 {
-		"You don't have enough food to last through the week. Your party dies of starvation."
+		di "You don't have enough food to last through the week. Your party dies of starvation."
 		global ot_dead = 1
-		exit
+		exit 1
 	}
 	
 	* Macro for valid response

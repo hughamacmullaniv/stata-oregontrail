@@ -1,7 +1,7 @@
-v 0.12
+v 0.13
 d
 d 'oregontrail': Oregon Trail in Stata
 d
-d Distribution-Date: 20201029
+d Distribution-Date: 20210124
 d
 f oregontrail.ado
