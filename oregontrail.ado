@@ -505,6 +505,9 @@ program define oregontrail_main_loop
 			*di "DEBUG: curr dist is $ot_curr_dist"
 			* Move forward
 			global ot_curr_dist = ${ot_curr_dist} + 200 + ceil((${ot_oxen}-220)/5 + runiform()*10) 
+                        if ${ot_curr_dist} + ${ot_total_mileage} > ${ot_goal_in_miles} {
+				global ot_curr_dist = ${ot_goal_in_miles} - ${ot_total_mileage}
+			}
 		
 			* Compute total mileage
 			sleep ${time2}
@@ -519,7 +522,7 @@ program define oregontrail_main_loop
 		}
 	
 		* Set win flag if distance to goal is negative
-		global ot_win = ${ot_goal_in_miles} - ${ot_total_mileage} < 0
+		global ot_win = ${ot_goal_in_miles} - ${ot_total_mileage} <= 0
 		    
 	}
 	
